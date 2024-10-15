@@ -34,5 +34,4 @@ def Putting_labels(image_folder):
 # Print out the DataFrame for verification
 Image_labeled=Putting_labels(folder)
 
-def training_model
 
