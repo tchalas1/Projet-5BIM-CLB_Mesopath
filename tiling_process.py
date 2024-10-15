@@ -23,3 +23,5 @@ tile = slide.read_region((x, y), 0, (tile_size, tile_size))
 # Convert to numpy for further processing
 tile_np = np.array(tile)
 Image.fromarray(tile_np).show()  # Show tile
+
+#coucou
