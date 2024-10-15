@@ -21,6 +21,9 @@ slide_width, slide_height = slide.dimensions
 # Tile size
 tile_size = 512
 
+# List to store the tiles
+tiles = []
+
 # Loop over the image and extract non-overlapping tiles
 for x in range(0, slide_width, tile_size):
     for y in range(0, slide_height, tile_size):
