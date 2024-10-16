@@ -4,6 +4,7 @@ from tiatoolbox.models import PatchPredictor
 import os
 import random
 import shutil
+import torch.nn as nn
 
 
 
@@ -53,4 +54,11 @@ model = predictor.model
 
 # Move model to GPU if available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = model.to(device)
+
+# Modify the final layer to have one output for binary classification (presence or absence of BAP1)
+num_features = model.fc.in_features
+model.fc = nn.Linear(num_features, 1)
+
+# Transfer the model to the GPU (if available)
 model = model.to(device)
