@@ -5,8 +5,6 @@ import os
 import random
 import shutil
 
-# Load pre-trained ResNet50 from TIAToolbox
-#predictor = PatchPredictor(pretrained_model='resnet50-kather100k', batch_size=32)
 
 
 def CreateDataset():
@@ -44,4 +42,15 @@ def CreateDataset():
 
     print(f"Training images: {len(train_images)}, Validation images: {len(val_images)}, Test images: {len(test_images)}")
 
-CreateDataset()
+#CreateDataset()
+
+
+# Load the pre-trained ResNet50 model from TIAToolbox
+predictor = PatchPredictor(pretrained_model='resnet50-kather100k', batch_size=32)
+
+# Get the PyTorch model (ResNet50) from the TIAToolbox predictor
+model = predictor.model
+
+# Move model to GPU if available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = model.to(device)
