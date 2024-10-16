@@ -1,6 +1,17 @@
 import os
 import pandas as pd
 import random
+import os
+import pandas as pd
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, Dataset, random_split
+from torchvision import transforms, models
+from torchvision.io import read_image
+from sklearn.model_selection import train_test_split
+import pretty_errors
 
 folder = 'Tiles'
 
@@ -18,7 +29,7 @@ def Putting_labels(image_folder):
             # You can assign labels based on the filename or any other criterion.
             # Here, I'm using an example where if the file starts with "bap1", it's labeled 1, else 0.
             # Randomly assign 0 or 1 as the label
-            labels.append(random.choice([0, 1]))
+            labels.append(random.choice(["presence of BAP1", "Absence of BAP1"]))
 
     # Create a DataFrame
     df = pd.DataFrame({
@@ -33,5 +44,3 @@ def Putting_labels(image_folder):
 
 # Print out the DataFrame for verification
 Image_labeled=Putting_labels(folder)
-
-

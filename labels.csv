@@ -1,91 +1,91 @@
 filename,label
-72192_10_23.jpeg,1
-72192_10_31.jpeg,0
-72192_10_8.jpeg,0
-72192_11_21.jpeg,0
-72192_11_22.jpeg,0
-72192_11_23.jpeg,0
-72192_11_8.jpeg,0
-72192_11_9.jpeg,1
-72192_12_22.jpeg,0
-72192_12_23.jpeg,0
-72192_12_24.jpeg,1
-72192_12_8.jpeg,1
-72192_13_20.jpeg,0
-72192_13_21.jpeg,0
-72192_13_22.jpeg,1
-72192_13_24.jpeg,1
-72192_13_8.jpeg,1
-72192_14_20.jpeg,0
-72192_14_21.jpeg,0
-72192_14_22.jpeg,1
-72192_14_25.jpeg,1
-72192_15_1.jpeg,1
-72192_15_2.jpeg,0
-72192_15_21.jpeg,1
-72192_15_22.jpeg,0
-72192_15_23.jpeg,1
-72192_15_24.jpeg,1
-72192_15_26.jpeg,0
-72192_15_27.jpeg,0
-72192_15_28.jpeg,0
-72192_15_29.jpeg,1
-72192_15_3.jpeg,0
-72192_15_30.jpeg,0
-72192_15_31.jpeg,1
-72192_15_32.jpeg,0
-72192_15_33.jpeg,0
-72192_15_4.jpeg,0
-72192_16_2.jpeg,0
-72192_16_22.jpeg,1
-72192_16_23.jpeg,0
-72192_16_24.jpeg,0
-72192_16_25.jpeg,1
-72192_16_26.jpeg,1
-72192_16_27.jpeg,1
-72192_16_3.jpeg,1
-72192_16_32.jpeg,1
-72192_16_33.jpeg,0
-72192_16_34.jpeg,0
-72192_16_35.jpeg,1
-72192_16_39.jpeg,1
-72192_16_4.jpeg,1
-72192_16_40.jpeg,1
-72192_16_41.jpeg,1
-72192_16_42.jpeg,0
-72192_16_5.jpeg,0
-72192_17_2.jpeg,1
-72192_17_25.jpeg,1
-72192_17_3.jpeg,0
-72192_17_33.jpeg,1
-72192_17_34.jpeg,1
-72192_17_35.jpeg,0
-72192_17_36.jpeg,0
-72192_17_37.jpeg,0
-72192_17_38.jpeg,0
-72192_17_39.jpeg,0
-72192_17_40.jpeg,1
-72192_17_41.jpeg,0
-72192_17_6.jpeg,1
-72192_17_7.jpeg,0
-72192_17_8.jpeg,1
-72192_18_35.jpeg,1
-72192_18_36.jpeg,1
-72192_18_37.jpeg,1
-72192_18_38.jpeg,0
-72192_18_39.jpeg,0
-72192_18_40.jpeg,1
-72192_18_41.jpeg,0
-72192_18_6.jpeg,1
-72192_26_25.jpeg,0
-72192_28_25.jpeg,0
-72192_30_11.jpeg,0
-72192_30_12.jpeg,1
-72192_30_13.jpeg,1
-72192_30_14.jpeg,1
-72192_30_45.jpeg,1
-72192_30_46.jpeg,1
-72192_30_47.jpeg,0
-72192_31_10.jpeg,0
-72192_31_11.jpeg,0
-72192_31_12.jpeg,1
+72192_10_23.jpeg,Absence of BAP1
+72192_10_31.jpeg,Absence of BAP1
+72192_10_8.jpeg,presence of BAP1
+72192_11_21.jpeg,Absence of BAP1
+72192_11_22.jpeg,Absence of BAP1
+72192_11_23.jpeg,Absence of BAP1
+72192_11_8.jpeg,Absence of BAP1
+72192_11_9.jpeg,presence of BAP1
+72192_12_22.jpeg,presence of BAP1
+72192_12_23.jpeg,presence of BAP1
+72192_12_24.jpeg,Absence of BAP1
+72192_12_8.jpeg,Absence of BAP1
+72192_13_20.jpeg,Absence of BAP1
+72192_13_21.jpeg,presence of BAP1
+72192_13_22.jpeg,Absence of BAP1
+72192_13_24.jpeg,presence of BAP1
+72192_13_8.jpeg,presence of BAP1
+72192_14_20.jpeg,Absence of BAP1
+72192_14_21.jpeg,Absence of BAP1
+72192_14_22.jpeg,Absence of BAP1
+72192_14_25.jpeg,presence of BAP1
+72192_15_1.jpeg,Absence of BAP1
+72192_15_2.jpeg,presence of BAP1
+72192_15_21.jpeg,Absence of BAP1
+72192_15_22.jpeg,Absence of BAP1
+72192_15_23.jpeg,presence of BAP1
+72192_15_24.jpeg,presence of BAP1
+72192_15_26.jpeg,Absence of BAP1
+72192_15_27.jpeg,presence of BAP1
+72192_15_28.jpeg,presence of BAP1
+72192_15_29.jpeg,presence of BAP1
+72192_15_3.jpeg,presence of BAP1
+72192_15_30.jpeg,presence of BAP1
+72192_15_31.jpeg,presence of BAP1
+72192_15_32.jpeg,presence of BAP1
+72192_15_33.jpeg,Absence of BAP1
+72192_15_4.jpeg,presence of BAP1
+72192_16_2.jpeg,presence of BAP1
+72192_16_22.jpeg,presence of BAP1
+72192_16_23.jpeg,Absence of BAP1
+72192_16_24.jpeg,presence of BAP1
+72192_16_25.jpeg,Absence of BAP1
+72192_16_26.jpeg,presence of BAP1
+72192_16_27.jpeg,Absence of BAP1
+72192_16_3.jpeg,Absence of BAP1
+72192_16_32.jpeg,presence of BAP1
+72192_16_33.jpeg,presence of BAP1
+72192_16_34.jpeg,presence of BAP1
+72192_16_35.jpeg,Absence of BAP1
+72192_16_39.jpeg,presence of BAP1
+72192_16_4.jpeg,Absence of BAP1
+72192_16_40.jpeg,presence of BAP1
+72192_16_41.jpeg,Absence of BAP1
+72192_16_42.jpeg,presence of BAP1
+72192_16_5.jpeg,presence of BAP1
+72192_17_2.jpeg,presence of BAP1
+72192_17_25.jpeg,presence of BAP1
+72192_17_3.jpeg,presence of BAP1
+72192_17_33.jpeg,presence of BAP1
+72192_17_34.jpeg,presence of BAP1
+72192_17_35.jpeg,Absence of BAP1
+72192_17_36.jpeg,presence of BAP1
+72192_17_37.jpeg,Absence of BAP1
+72192_17_38.jpeg,Absence of BAP1
+72192_17_39.jpeg,Absence of BAP1
+72192_17_40.jpeg,presence of BAP1
+72192_17_41.jpeg,Absence of BAP1
+72192_17_6.jpeg,Absence of BAP1
+72192_17_7.jpeg,Absence of BAP1
+72192_17_8.jpeg,presence of BAP1
+72192_18_35.jpeg,Absence of BAP1
+72192_18_36.jpeg,Absence of BAP1
+72192_18_37.jpeg,Absence of BAP1
+72192_18_38.jpeg,presence of BAP1
+72192_18_39.jpeg,Absence of BAP1
+72192_18_40.jpeg,Absence of BAP1
+72192_18_41.jpeg,Absence of BAP1
+72192_18_6.jpeg,Absence of BAP1
+72192_26_25.jpeg,Absence of BAP1
+72192_28_25.jpeg,presence of BAP1
+72192_30_11.jpeg,presence of BAP1
+72192_30_12.jpeg,presence of BAP1
+72192_30_13.jpeg,Absence of BAP1
+72192_30_14.jpeg,presence of BAP1
+72192_30_45.jpeg,presence of BAP1
+72192_30_46.jpeg,presence of BAP1
+72192_30_47.jpeg,Absence of BAP1
+72192_31_10.jpeg,Absence of BAP1
+72192_31_11.jpeg,Absence of BAP1
+72192_31_12.jpeg,Absence of BAP1
