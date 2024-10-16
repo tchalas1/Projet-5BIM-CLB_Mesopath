@@ -62,3 +62,8 @@ model.fc = nn.Linear(num_features, 1)
 
 # Transfer the model to the GPU (if available)
 model = model.to(device)
+
+#define loss criterion and optimizer
+criterion = nn.BCEWithLogitsLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+
