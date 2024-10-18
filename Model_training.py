@@ -5,8 +5,14 @@ import os
 import random
 import shutil
 import torch.nn as nn
+from torchvision import datasets, transforms
+from torch.utils.data import DataLoader
 
 
+image_dir = 'Tiles'
+train_dir = 'Tiles/train/'
+val_dir = 'Tiles/val/'
+test_dir = 'Tiles/test/'
 
 def CreateDataset():
     # Paths
@@ -67,3 +73,27 @@ model = model.to(device)
 criterion = nn.BCEWithLogitsLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
+
+
+# Define the image transformations
+data_transforms = {
+    'train': transforms.Compose([
+        transforms.Resize((224, 224)),  # ResNet50 expects 224x224 input
+        transforms.RandomHorizontalFlip(),
+        transforms.ToTensor(),
+    ]),
+    'val': transforms.Compose([
+        transforms.Resize((224, 224)),
+        transforms.ToTensor(),
+    ]),
+}
+
+# Load the datasets
+train_dataset = datasets.ImageFolder(train_dir, transform=data_transforms['train'])
+val_dataset = datasets.ImageFolder(val_dir, transform=data_transforms['val'])
+test_dataset = datasets.ImageFolder(test_dir, transform=data_transforms['val'])
+
+# Create the DataLoaders
+train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
+test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
