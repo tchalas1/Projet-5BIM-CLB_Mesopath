@@ -5,9 +5,11 @@ import os
 import random
 import shutil
 import torch.nn as nn
-from torchvision import datasets, transforms
+from torchvision import datasets, transforms, models
 from torch.utils.data import DataLoader
+from torchvision.models import ResNet50_Weights
 
+print(torch.cuda.is_available())
 
 image_dir = 'Tiles'
 train_dir = 'Tiles/train/'
@@ -51,12 +53,8 @@ def CreateDataset():
 
 #CreateDataset()
 
-
-# Load the pre-trained ResNet50 model from TIAToolbox
-predictor = PatchPredictor(pretrained_model='resnet50-kather100k', batch_size=32)
-
 # Get the PyTorch model (ResNet50) from the TIAToolbox predictor
-model = predictor.model
+model = models.resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
 
 # Move model to GPU if available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
