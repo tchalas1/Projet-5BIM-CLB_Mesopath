@@ -24,7 +24,7 @@ else:
 def tiling_embedding (path, conch, eval_transform, tile_size, threshold_RGB, threshold_perc_white, bap1, wsi_id):
     with open('H:/PFAR/Mesopath_INSA/CONCH_embeddings/CONCH_embeddings_'+wsi_id+'.csv', 'w', newline='') as file1:
         writer1 = csv.writer(file1)
-        writer1.writerow(["ID", "Slide", "BAP1_mutation","Coord_x","Coord_y"]+ [f'Comp_{i}' for i in range(1, 513)])
+        writer1.writerow(["ID", "Slide", "BAP1_mutation","Coord_x","Coord_y"]+ [f'Comp_{i}' for i in range(1, 769)])
         slide = openslide.OpenSlide(path)
         width,height = slide.dimensions
         w_tile_number= width//tile_size
