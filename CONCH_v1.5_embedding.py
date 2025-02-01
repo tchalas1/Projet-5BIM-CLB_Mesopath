@@ -35,7 +35,7 @@ def tiling_embedding (path, conch, eval_transform, tile_size, threshold_RGB, thr
                 tile_np = np.array(tile)
                 if ((tile_np > threshold_RGB).sum(2) == 3).sum() / (tile_np.shape[0] * tile_np.shape[1]) < threshold_perc_white:
                     print("Tile:",i,j)
-                    image = eval_transform(image).unsqueeze(0)
+                    image = eval_transform(tile).unsqueeze(0)
                     image = image.to(device)
                     with torch.inference_mode():
                         image_embs = conch(image)
