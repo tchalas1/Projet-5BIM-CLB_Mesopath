@@ -56,7 +56,7 @@ threshold_perc_white = 0.5
 # Adapter les chemins !
 path_to_wsi = 'F:/MESO_AI/'
 path_to_meta = r"C:\Users\CHALAS\source\repos\INSA_project_slides_anonym.xlsx"
-path_to_embeds = 'H:/PFAR/Mesopath_INSA/CONCH_embeddings/' # Chemin vers le dossier ou doivent être enregistrer les embeddings
+path_to_embeds = 'H:/PFAR/Mesopath_INSA/CONCH_embeddings/' # Chemin vers le dossier ou doivent etre enregistres les embeddings
 path_to_conch_ckpt = r"C:\Users\CHALAS\source\repos\CONCH\checkpoints\conch\pytorch_model.bin"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
