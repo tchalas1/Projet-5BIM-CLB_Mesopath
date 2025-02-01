@@ -24,7 +24,7 @@ else:
 
 
 def tiling_embedding (path, model, preprocess, tile_size, threshold_RGB, threshold_perc_white, bap1, wsi_id):
-    with open('H:/PFAR/Mesopath_INSA/CONCH_embeddings/CONCH_embeddings_'+wsi_id+'.csv', 'w', newline='') as file1:
+    with open(path_to_embeds + 'CONCH_embeddings_'+wsi_id+'.csv', 'w', newline='') as file1:
         writer1 = csv.writer(file1)
         writer1.writerow(["ID", "Slide", "BAP1_mutation","Coord_x","Coord_y"]+ [f'Comp_{i}' for i in range(1, 513)])
         slide = openslide.OpenSlide(path)
@@ -46,7 +46,6 @@ def tiling_embedding (path, model, preprocess, tile_size, threshold_RGB, thresho
 
 ### MAIN ###
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 tile_size = 512
 threshold_RGB = 220 # 215
 threshold_perc_white = 0.5
@@ -54,10 +53,13 @@ tile_size = 512
 threshold_RGB = 220 # 215
 threshold_perc_white = 0.5
 path_to_wsi = 'F:/MESO_AI/'
-meta=pd.read_excel(r"C:\Users\CHALAS\source\repos\INSA_project_slides_anonym.xlsx", sheet_name="Feuil1", usecols="A,B")
+path_to_meta = r"C:\Users\CHALAS\source\repos\INSA_project_slides_anonym.xlsx"
+path_to_embeds = 'H:/PFAR/Mesopath_INSA/CONCH_embeddings/'
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+meta=pd.read_excel(path_to_meta, sheet_name="Feuil1", usecols="A,B")
 model, preprocess = create_model_from_pretrained("conch_ViT-B-16", checkpoint_path=r"C:\Users\CHALAS\source\repos\CONCH\checkpoints\conch\pytorch_model.bin", force_image_size=512)
 model = model.to(device)
-
 
 for i in range(0,len(meta.iloc[:,1])) :
         new_id="wsi_"+str(i).rjust(3, '0')
