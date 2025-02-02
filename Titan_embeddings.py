@@ -42,8 +42,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 titan = titan.to(device)
 patch_size_lv0 = 512 #kepts as in the paper for x20 magnification
 
-path_to_conch_embedd="C:/Users/thiba/Documents/INSA_2024-2025/Semestre1/projet_5BIM/Conch_Embbedings/"
-save_path = "C:/Users/thiba/Documents/INSA_2024-2025/Semestre1/projet_5BIM/Titan_embeddings/"
+path_to_conch_embedd="C:/Users/thiba/Documents/INSA_2024-2025/Semestre1/projet_5BIM/Conch_Embbedings/" #Path to be modified 
+save_path = "C:/Users/thiba/Documents/INSA_2024-2025/Semestre1/projet_5BIM/Titan_embeddings/" #Path to be modified
 
 # Iterate through the files
 for file_name in os.listdir(path_to_conch_embedd):
