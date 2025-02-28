@@ -8,9 +8,6 @@ sys.path.insert(0, '/Users/CHALAS/')
 from CONCH.conch.open_clip_custom import create_model_from_pretrained, get_tokenizer, tokenize
 from PIL import Image
 import torch
-import glob
-import csv
-import pandas as pd
 from huggingface_hub import login
 from transformers import AutoModel 
 
